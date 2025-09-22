@@ -104,19 +104,19 @@ Our system implements a novel approach combining:
 
 ### Software Stack
 Application Layer:
- RIS Control Policies
- Security Protocol Handlers  
- Channel Estimation Algorithms
+ RIS Control Policies,
+  Security Protocol Handlers,  
+  Channel Estimation Algorithms.
 
 Runtime System:
- Real-time Scheduler
- BNN Inference Engine
- Hardware Abstraction Layer
+ Real-time Scheduler,
+  BNN Inference Engine,
+  Hardware Abstraction Layer.
 
 Secure Bootloader:
- Cryptographic Verification
- Anti-rollback Protection
- Hardware Initialization
+ Cryptographic Verification,
+  Anti-rollback Protection, 
+  Hardware Initialization.
 
 
 ## 🛣️ Development Roadmap
