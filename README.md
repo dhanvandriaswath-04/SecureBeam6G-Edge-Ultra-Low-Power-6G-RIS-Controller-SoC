@@ -26,20 +26,6 @@ A Microwatt-based system that achieves **92% improvement in secrecy rates** and 
 - **Edge-deployable**: 512KB on-chip SRAM, no DRAM dependency
 - **SKY130-ready**: Complete OpenLane flow implementation
 
-## 🏗️ System Architecture
-SecureBeam6G SoC Layout:
-
-[Microwatt POWER Core @ 100MHz] ←→ [BNN Accelerator 100 GOPS/W]
-                ↕
-[Hardware Security Module (TRNG + AES-256)] ←→ [Real-time Controller]
-                ↕
-[512KB On-Chip SRAM - No DRAM Required]
-                ↕
-[SPI/I2C/GPIO Interfaces] ←→ [Power Management] ←→ [Debug UART]
-                ↕
-[External THz RIS Array - Passive Metasurfaces]
-
-
 ## 💡 Why Microwatt is Perfect for This Application
 
 ### 🔋 Power Efficiency
@@ -118,19 +104,19 @@ Our system implements a novel approach combining:
 
 ### Software Stack
 Application Layer:
-├── RIS Control Policies
-├── Security Protocol Handlers  
-└── Channel Estimation Algorithms
+ RIS Control Policies
+ Security Protocol Handlers  
+ Channel Estimation Algorithms
 
 Runtime System:
-├── Real-time Scheduler
-├── BNN Inference Engine
-└── Hardware Abstraction Layer
+ Real-time Scheduler
+ BNN Inference Engine
+ Hardware Abstraction Layer
 
 Secure Bootloader:
-├── Cryptographic Verification
-├── Anti-rollback Protection
-└── Hardware Initialization
+ Cryptographic Verification
+ Anti-rollback Protection
+ Hardware Initialization
 
 
 ## 🛣️ Development Roadmap
@@ -201,11 +187,6 @@ This work builds upon peer-reviewed research:
 - Extensive simulation results validating 92% security improvements
 - Novel integration of quantum-resistant cryptography with edge AI
 
-## 🏆 Microwatt Momentum Hackathon
-
-**Timeline**: September 22, 2025 (Proposal) → October 31, 2025 (Final Submission)  
-**Theme**: "Microwatt for the open computing era"  
-**Objective**: Demonstrate innovative, practical applications of the Microwatt CPU core
 
 ### Hackathon Deliverables
 - ✅ Complete RTL implementation fitting OpenFrame user project area
